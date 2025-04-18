@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Book Store</title>
+        <!-- link style css -->
+        <link rel="stylesheet" href="./Assests/css/style.css">
+        <!-- link bootstrap css -->
+        <link rel="stylesheet" href="./Assests/css/bootstrap.css">
+        <!-- fontstyle -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+            rel="stylesheet">
+        <!-- fontawesome cdn -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- link favicon -->
+         <link rel="shortcut icon" href="./Assests/img/favicon.png" type="image/x-icon">
+
+    </head>
+    <body>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <button class="menutoggle">
+                        <i
+                        class="fa-solid fa-bars "></i>
+                    </button></a>
+
+                <!-- <div class="collapse navbar-collapse"
+                    id="navbarSupportedContent">
+                                    
+                </div> -->
+                <span class="search-icon"><i
+                    class="fa-solid fa-magnifying-glass"></i></span>  
+                <input type="search" placeholder="What are you looking for?"
+                class="nav-searchbar">  
+                <ul class="navicons d-flex list-unstyled gap-3">
+                    <li class="nav-icon"><i
+                            class="fa-regular fa-user"></i></li>
+                    <li class="nav-icon"><i
+                            class="fa-regular fa-heart"></i></li>
+                   <li> <button class="nav-button gap-5"><i
+                            class="fa-solid fa-cart-shopping"></i>Basket</button></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- herosection -->
+        <section class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card card-box" style="width: 28rem;">
+                            <div class="card-body">
+                                <h2 class="card-title">New Releases This
+                                    Week</h2>
+                                <p class="card-text card-content">This week’s
+                                    new releases include Ramit Sethi's Money for
+                                    Couples, Marcia Clark's Trial by Ambush,
+                                    Jennifer Love Hewitt's Inheriting Magic, and
+                                    Brandon Sanderson's Wind and Truth, spanning
+                                    finance, memoir, and fantasy.</p>
+                                <a href="#"
+                                    class="btn btn-primary card-button">Subscribe</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- col2 -->
+                    <div class="col-lg-6">
+                        <div class="book-images mt-4 ms-5">
+                            <img src="./Assests/img/Animation image.png"
+                                alt="animation image" height="450px"
+                                width="550px" class="animation-img
+                        ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section-two -->
+        <section class="container-fluid">
+            <div class="container mt-5">
+                <h3 class="section2-heading">Top Sellers</h3>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 Dropdown-menu">
+                    <li class="nav-item dropdown dropdown-text">
+                        <a class="nav-link dropdown-toggle" href="#"
+                            role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Choose a genre
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item"
+                                    href="#">Action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Another
+                                    action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else
+                                    here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- carousel slides -->
+                <div id="carouselExample" class="carousel slide mt-5  ">
+                    <div class="carousel-inner">
+                        <!-- slide-one -->
+                        <div class="carousel-item active">
+                            <div class="slider-one d-flex ">
+                                <!-- col1 -->
+                                <div class="card mb-3 Card-Box1"
+                                    style="max-width: 500px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="./Assests/img/book1.png"
+                                                class="img-fluid rounded-start  responsive-img"
+                                                alt="book">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title Card-heading1">The
+                                                    Time Has Come</h5>
+                                                <p
+                                                    class="card-text Card-Content1">Lindbergh's
+                                                    Pharmacy is an
+                                                    Athens,
+                                                    Georgia,institution...</p>
+                                                <span
+                                                    class="After-price">$27.89</span>
+                                                <span
+                                                    class="text-decoration-line-through Before-price">$30.99</span>
+                                            </div>
+                                            <a><span><i
+                                                        class="fa-solid fa-cart-shopping card1-icon"></i></span><button
+                                                    class="card1-button mt-4">Add
+                                                    to Basket</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- col2 -->
+                                <div class="card mb-3 Card-Box1"
+                                    style="max-width: 500px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="./Assests/img/book3.png"
+                                                class="img-fluid rounded-start responsive-img"
+                                                alt="book">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title Card-heading1">I
+                                                    want a Better
+                                                    Catastrophe</h5>
+                                                <p
+                                                    class="card-text Card-Content1">In
+                                                    this powerful, yet
+                                                    pratical book, economist
+                                                    and...</p>
+                                                <span
+                                                    class="After-price">$29.99</span>
+                                                <span
+                                                    class="text-decoration-line-through Before-price">$32.99</span>
+                                            </div>
+                                            <a><span><i
+                                                        class="fa-solid fa-cart-shopping card1-icon"></i></span><button
+                                                    class="card1-button">Add to
+                                                    Basket</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- col3 -->
+                                <div class="card mb-3 Card-Box1"
+                                    style="max-width: 500px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="./Assests/img/book4.png"
+                                                class="img-fluid rounded-start responsive-img"
+                                                alt="book">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title Card-heading1">The
+                                                    Time Has Come</h5>
+                                                <p
+                                                    class="card-text Card-Content1">In
+                                                    this powerful, yet pratical
+                                                    book, economist and...</p>
+                                                <span
+                                                    class="After-price">$29.99</span>
+                                                <span
+                                                    class="text-decoration-line-through Before-price">$32.99</span>
+                                            </div>
+                                            <a><span><i
+                                                        class="fa-solid fa-cart-shopping card1-icon"></i></span><button
+                                                    class="card1-button">Add to
+                                                    Basket</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide-two -->
+                        <div class="carousel-item">
+                            <div class="slider-two d-flex ">
+                                <!-- col4 -->
+                                <div class="card mb-3 Card-Box1"
+                                    style="max-width: 500px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="./Assests/img/book5.png"
+                                                class="img-fluid rounded-start responsive-img"
+                                                alt="book">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title Card-heading1">Pride
+                                                    and Protest</h5>
+                                                <p
+                                                    class="card-text Card-Content1">A
+                                                    woman goes head-to-head with
+                                                    the CEO of...</p>
+                                                <span
+                                                    class="After-price">$15.50</span>
+                                                <span
+                                                    class="text-decoration-line-through Before-price">$18.50</span>
+                                            </div>
+                                            <a><span><i
+                                                        class="fa-solid fa-cart-shopping card1-icon"></i></span><button
+                                                    class="card1-button mt-4">Add
+                                                    to Basket</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- col5 -->
+                                <div class="card mb-3 Card-Box1"
+                                    style="max-width: 500px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="./Assests/img/book2.png"
+                                                class="img-fluid rounded-start responsive-img"
+                                                alt="book">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title Card-heading1">Forgrt
+                                                    a Mentor, Find...</h5>
+                                                <p
+                                                    class="card-text Card-Content1">In
+                                                    this powerful, yet pratical
+                                                    book, economist and... </p>
+                                                <span
+                                                    class="After-price">$29.99</span>
+                                                <span
+                                                    class="text-decoration-line-through Before-price">$32.99</span>
+                                            </div>
+                                            <a><span><i
+                                                        class="fa-solid fa-cart-shopping card1-icon"></i></span><button
+                                                    class="card1-button mt-4">Add
+                                                    to Basket</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- col6 -->
+                                <div class="card mb-3 Card-Box1"
+                                    style="max-width: 500px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="./Assests/img/book6.png"
+                                                class="img-fluid rounded-start responsive-img"
+                                                alt="book">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title Card-heading1">The
+                                                    Midnight Library</h5>
+                                                <p
+                                                    class="card-text Card-Content1">A
+                                                    woman goes head-to-head with
+                                                    the CEO of...</p>
+                                                <span
+                                                    class="After-price">$15.50</span>
+                                                <span
+                                                    class="text-decoration-line-through Before-price">$18.50</span>
+                                            </div>
+                                            <a><span><i
+                                                        class="fa-solid fa-cart-shopping card1-icon"></i></span><button
+                                                    class="card1-button mt-4">Add
+                                                    to Basket</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button"
+                        data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"
+                            aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button"
+                        data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"
+                            aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+        </section>
+        <!-- section-three -->
+        <section class="container-fluid">
+            <div class="container mt-5">
+                <h3 class="section-heading">News</h3>
+                <div class="row">
+                    <div class="col-lg-4 mt-3">
+                        <p class="news-heading">The Books You Need to Read in
+                            2023</p>
+                        <hr class="hr-line">
+                        <div class="news-content" style="width: 27rem;">
+                            <p class="responsive-newstext">Brandon Sanderson's Wind and Truth is a
+                                captivating fantasy novel, weaving intricate
+                                world-building with compelling characters. It
+                                explores themes of courage, betrayal, and
+                                destiny, promising an unforgettable journey for
+                                fans of epic adventures and richly imagined
+                                storytelling.</p>
+                        </div>
+                    </div>
+                    <!-- col-2 -->
+                    <div class="col-lg-2 mt-3">
+                        <img src="./Assests/img/Photo news1.png" alt="news-img" class="news-img">
+                    </div>
+                    <!-- col3 -->
+                    <div class="col-lg-4 mt-3">
+                        <p class="news-heading">The Books You Need to Read in
+                            2023</p>
+                        <hr class="hr-line">
+                        <div class="news-content " style="width: 27rem;">
+                            <p class="responsive-newstext">Brandon Sanderson's Wind and Truth is a
+                                captivating fantasy novel, weaving intricate
+                                world-building with compelling characters. It
+                                explores themes of courage, betrayal, and
+                                destiny, promising an unforgettable journey for
+                                fans of epic adventures and richly imagined
+                                storytelling.</p>
+                        </div>
+                    </div>
+                    <!-- col4 -->
+                    <div class="col-lg-2 mt-3 ">
+                        <img src="./Assests/img/Photo news2.png" alt="news-img" class="news-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section-four -->
+        <section class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="logo-img">
+                            <img src="./Assests/img/Logo.png" alt="Logo"
+                                width="105px" height="100px">
+                        </div>
+                        <div class="section5-flex d-flex mt-3">
+                            <div class="section5-col1 d-flex gap-5">
+                                <p>About</p>
+                                <p>Features</p>
+                                <p>Pricing</p>
+                            </div>
+                            <div class="d-flex section5-col1 ms-5 gap-5">
+                                <p>Gallery</p>
+                                <p>Team</p>
+                            </div>
+                        </div>  
+                    </div>
+                    <!-- col2 -->
+                    <div class="col-lg-6">
+                        <div class="section5-col2">
+                            <p>Subscribe to stay tuned for new product and
+                                latest updates. Let’s do it!</p>
+                        </div>
+                        <div class="section5-col2 d-flex gap-5 mt-5">
+                            <input type="email"
+                                placeholder="Enter your email address"
+                                class="email-box"><span><button
+                                    class="subscribe-button">Subscribe</button></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer section -->
+        <hr>
+        <section class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="footer">
+                            <ul
+                                class="footer-content d-flex gap-5 list-unstyled mt-3">
+                                <li>Privacy Policy</li>
+                                <li>Terms of use</li>
+                                <li>Sales and Refunds</li>
+                                <li>Legal</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="footer-icons d-flex float-end gap-4 mt-2">
+                            <img src="./Assests/img/insta-logo.png" alt="insta"
+                                width="45px" height="40px">
+                            <img src="./Assests/img/google-logo.png" alt="insta"
+                                width="70px" height="40px">
+                            <img src="./Assests/img/fb-logo.png" alt="insta"
+                                width="40px" height="40px">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <script src="./Assests/js/script.js"></script>
+
+    </body>
+</html>
